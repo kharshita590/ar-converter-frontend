@@ -37,7 +37,7 @@ export default function FileUpload(){
 
             const queryString = `data=${encodeURIComponent(JSON.stringify(response.data.imgUrl))}`;  
             const objectId=response.data.idd
-            const url = `https://ar-converter-backend.onrender.com/model/${objectId}`;  
+            const url = `https://ar-converter-frontend.vercel.app/model/${objectId}`;  
             console.log(queryString);
             setUrl(url)
             setMsg("Upload completed");
