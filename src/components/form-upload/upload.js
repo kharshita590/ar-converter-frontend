@@ -21,7 +21,7 @@ export default function FileUpload(){
         fd.append("file",files[0]);
 
         try{
-            const response = await axios.post('https://ar-converter-backend-2.onrender.com/api',fd,{
+            const response = await axios.post('https://ar-converter-backend-1aku.vercel.app/api',fd,{
                 header:{
                     "Content-type":"multipart/form-data",
                 },
