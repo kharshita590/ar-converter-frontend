@@ -21,7 +21,7 @@ export default function FileUpload(){
         fd.append("file",files[0]);
 
         try{
-            const response = await axios.post('http://localhost:3002/api',fd,{
+            const response = await axios.post('https://ar-converter-backend.onrender.com/api',fd,{
                 header:{
                     "Content-type":"multipart/form-data",
                 },
@@ -37,7 +37,7 @@ export default function FileUpload(){
 
             const queryString = `data=${encodeURIComponent(JSON.stringify(response.data.imgUrl))}`;  
             const objectId=response.data.idd
-            const url = `http://localhost:3003/model/${objectId}`;  
+            const url = `https://ar-converter-backend.onrender.com/model/${objectId}`;  
             console.log(queryString);
             setUrl(url)
             setMsg("Upload completed");
