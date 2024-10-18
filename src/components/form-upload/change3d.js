@@ -34,7 +34,7 @@ export default function Change3d() {
   
     const fetchModel = async () => {
       try {
-        const response = await axios.get(`https://ar-converter-backend.onrender.com/model/${id}`);
+        const response = await axios.get(`https://ar-converter-backend-2.onrender.com/model/${id}`);
         setModelUrl(response.data.imgUrl);
       } catch (error) {
         console.error("Error fetching the model:", error);
