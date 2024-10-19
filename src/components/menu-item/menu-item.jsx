@@ -1,5 +1,5 @@
 import './menu-item.css'
-
+import '@google/model-viewer'; 
 function MenuItem (props) {
     return (
       <div className="menu-item">
