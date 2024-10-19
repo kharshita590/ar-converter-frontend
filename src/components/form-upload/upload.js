@@ -2,9 +2,8 @@ import React,{useState} from "react";
 import axios from 'axios';
 import MenuItem from "../menu-item/menu-item";
 import Iframe from "react-iframe";
-import { useNavigate } from "react-router-dom";
 export default function FileUpload(){
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [files,setFiles] = useState(null);
     const [msg,setMsg] = useState(null);
     const [progress,setProgress] = useState({started:false,pc:0});
@@ -80,6 +79,7 @@ export default function FileUpload(){
         Go to Model
       </a>
  <Iframe src={url} width="500px" height="500px"/>
+ <p>{data}</p>
         </main>
     )
 
