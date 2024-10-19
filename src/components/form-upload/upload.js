@@ -7,7 +7,7 @@ export default function FileUpload(){
     const [files,setFiles] = useState(null);
     const [msg,setMsg] = useState(null);
     const [progress,setProgress] = useState({started:false,pc:0});
-    const [data,setData] = useState([]);
+   
     const [img,setImg] = useState("");
     const [url,setUrl]=useState()
 
@@ -31,7 +31,7 @@ export default function FileUpload(){
                     }));
                 },
             });
-            setData(response.data);
+            
             setImg(response.data.imgUrl);
 
             const queryString = `data=${encodeURIComponent(JSON.stringify(response.data.imgUrl))}`;  
@@ -79,7 +79,7 @@ export default function FileUpload(){
         Go to Model
       </a>
  <Iframe src={url} width="500px" height="500px"/>
- <p>{data}</p>
+ 
         </main>
     )
 
