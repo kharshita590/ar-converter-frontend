@@ -75,6 +75,9 @@ export default function FileUpload(){
     androidSource={img}
     iosSource="assets/models/ios/Salmon_tartine.usdz" 
     alternateName="Salmon Tartine" 
+    camera-controls 
+    ar
+    xr-environment
   />
      <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
         Go to Model
